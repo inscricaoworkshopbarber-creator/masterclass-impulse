@@ -5,7 +5,7 @@ Site estático servido por **Nginx** em **Docker**, pronto para o **Easypanel**.
 
 Rastreamento já instalado nas duas páginas:
 - Google Tag Manager: `GTM-NFG6G89X`
-- Pixel da Meta: `1316986016846604` (PageView + InitiateCheckout nos botões de compra)
+- Pixel da Meta: `1316986016846604` (PageView + InitiateCheckout na LP e Purchase na página de obrigado)
 
 ## Deploy no Easypanel
 
