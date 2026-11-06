@@ -22,6 +22,20 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '1316986016846604');
 fbq('track', 'PageView');
+fbq('track', 'Purchase', {
+  content_name: 'Masterclass IA aplicada à barbearia',
+  value: 29.90,
+  currency: 'BRL'
+});
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({
+  event: 'purchase',
+  ecommerce: {
+    value: 29.90,
+    currency: 'BRL',
+    items: [{ item_name: 'Masterclass IA aplicada à barbearia', price: 29.90, quantity: 1 }]
+  }
+});
 </script>
 <!-- End Meta Pixel Code -->
 <title>Boas-vindas Agenda Cheia</title>
