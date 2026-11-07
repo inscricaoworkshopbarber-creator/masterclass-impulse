@@ -101,9 +101,12 @@ p{margin:0}
 .flag{position:absolute;top:-13px;left:26px;background:#e04a3a;color:#fff;font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:5px 12px;border-radius:999px}
 .incl{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;font-size:15px}
 .incl li::before{content:"✓  ";color:var(--mint);font-weight:800}
-.price{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
-.price s{color:var(--muted)}
-.price b{font-size:40px;font-weight:800;color:var(--gold);letter-spacing:-.02em;line-height:1}
+.price{display:flex;flex-direction:column;gap:6px;margin-top:6px}
+.price .p-cond{font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;font-weight:600}
+.price .p-row{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.price .p-times{font-size:18px;color:#fff;font-weight:700}
+.price b{font-size:38px;font-weight:800;color:var(--gold);letter-spacing:-.02em;line-height:1}
+.price .p-cash{font-size:15px;color:var(--muted)}
 .skip{font-size:13px;color:var(--muted)}
 
 /* lembrete */
@@ -177,15 +180,22 @@ src="https://www.facebook.com/tr?id=1316986016846604&ev=PageView&noscript=1"/></
         <span class="flag">Importante</span>
         <span class="num">3</span>
         <div>
-          <h3>Garanta a gravação e os materiais de apoio</h3>
+          <h3>Garanta a Gravação + Materiais: Masterclass Ativos Digitais com IA</h3>
           <p>Vamos trabalhar muito com IA ao vivo, e cada passo depende do anterior. Com a gravação você <strong style="color:#fff">volta, pausa e refaz o seu processo</strong> no seu ritmo, quantas vezes precisar.</p>
           <ul class="incl">
-            <li>Gravação completa da masterclass</li>
-            <li>Materiais de apoio da aula <span class="todo">[listar: prompts, checklists, guia…]</span></li>
-            <li>Acesso por <span class="todo">[X dias]</span></li>
+            <li>Gravação completa da Masterclass Ativos Digitais com IA</li>
+            <li>Materiais de apoio da aula (prompts, checklists e guias práticos)</li>
+            <li>Acesso completo para assistir no seu ritmo</li>
             <li><strong style="color:#ffc44d">Bônus: Pack de artes luxo para barbearia</strong></li>
           </ul>
-          <div class="price"><span>Só nesta página:</span><b>R$ <span class="todo">[valor]</span></b></div>
+          <div class="price">
+            <span class="p-cond">Condição exclusiva nesta página:</span>
+            <div class="p-row">
+              <span class="p-times">12x de</span>
+              <b>R$ 9,97</b>
+              <span class="p-cash">ou R$ 97,00 à vista</span>
+            </div>
+          </div>
           <a class="btn" href="https://payfast.greenn.com.br/m3zubqm" target="_blank" rel="noopener noreferrer">Quero a gravação e os materiais</a>
           <p class="skip">Se você já adquiriu a gravação junto com o ingresso, pode pular este passo.</p>
         </div>
