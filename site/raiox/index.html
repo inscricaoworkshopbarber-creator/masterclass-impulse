@@ -1,0 +1,483 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover>
+<meta name="description" content="Raio-X do seu negócio de beleza: barbearia, salão, studio ou estética. Diagnóstico oficial da Masterclass Agenda Cheia com IA.">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NFG6G89X');</script>
+<!-- End Google Tag Manager -->
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1316986016846604');
+fbq('track', 'PageView');
+</script>
+<!-- End Meta Pixel Code -->
+<title>Raio-X do Negócio · Barbearia, Beleza e Estética</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ece1c3;--surface:#f6efdc;--ink:#063940;--ink-soft:#195e63;--accent:#195e63;--accent-ink:#ece1c3;
+  --line:#c9bd9c;--chip:#e3d6b2;--danger:#8a2b1f;
+  color-scheme:light;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#063940;--surface:#0b4a52;--ink:#ece1c3;--ink-soft:#8ebdb6;--accent:#8ebdb6;--accent-ink:#063940;
+  --line:#195e63;--chip:#0f545c;--danger:#f0a08f;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#063940;--surface:#0b4a52;--ink:#ece1c3;--ink-soft:#8ebdb6;--accent:#8ebdb6;--accent-ink:#063940;--line:#195e63;--chip:#0f545c;--danger:#f0a08f;color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;font-size:17px;line-height:1.55}
+.wrap{max-width:680px;margin:0 auto;padding:28px 20px 120px}
+h1,h2,.serif{font-family:"Cormorant Garamond",Georgia,"Times New Roman",serif;font-weight:600;letter-spacing:-.01em}
+h1{font-size:clamp(44px,11vw,72px);line-height:.95;margin:28px 0 20px}
+h2{font-size:clamp(36px,9vw,52px);line-height:1;margin:6px 0 10px}
+.lead{font-size:19px;color:var(--ink-soft);max-width:34em}
+.sign{margin-top:40px;font-size:15px;color:var(--ink-soft)}
+.step-count{font-size:15px;color:var(--ink-soft)}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding:12px 0 10px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.track{height:6px;background:var(--chip);border-radius:3px;overflow:hidden}
+.fill{height:100%;background:var(--accent);width:0;transition:width .35s ease}
+.intro-step{font-size:17px;color:var(--ink-soft);margin-bottom:26px}
+.field{margin:0 0 26px}
+.field>label,.field>.lbl{display:block;font-weight:600;font-size:17px;margin-bottom:4px}
+.hint{font-size:14.5px;color:var(--ink-soft);margin:0 0 10px}
+input[type=text],input[type=tel],input[type=url],input[type=number],textarea,select{
+  width:100%;font:inherit;color:var(--ink);background:var(--surface);border:1.5px solid var(--line);border-radius:10px;padding:13px 14px}
+textarea{min-height:110px;resize:vertical}
+input:focus,textarea:focus,select:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 25%,transparent)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:inherit;font-size:15.5px;color:var(--ink);background:var(--chip);border:1.5px solid transparent;border-radius:999px;padding:9px 15px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+.chip:focus-visible,.btn:focus-visible{outline:3px solid var(--ink-soft);outline-offset:2px}
+.colors{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.color{background:var(--surface);border:1.5px solid var(--line);border-radius:10px;padding:10px}
+.color input[type=color]{width:100%;height:54px;border:0;background:none;padding:0;cursor:pointer}
+.color input[type=text]{margin-top:6px;padding:8px;font-size:15px;text-align:center}
+.color small{display:block;font-size:13px;color:var(--ink-soft);margin-bottom:4px}
+.item{background:var(--surface);border:1.5px solid var(--line);border-radius:12px;padding:14px;margin-bottom:12px;display:grid;gap:8px}
+.item .row{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.item .del{justify-self:end;background:none;border:0;color:var(--danger);font:inherit;font-size:14px;cursor:pointer;padding:4px}
+.add{background:none;border:1.5px dashed var(--accent);color:var(--accent);border-radius:12px;padding:12px;width:100%;font:inherit;font-weight:600;cursor:pointer}
+.nav{position:fixed;left:0;right:0;bottom:0;background:var(--bg);border-top:1px solid var(--line);padding:12px 20px calc(12px + env(safe-area-inset-bottom,0px))}
+.nav .in{max-width:680px;margin:0 auto;display:flex;gap:10px;justify-content:space-between;align-items:center}
+.btn{font:inherit;font-weight:600;border-radius:999px;padding:14px 24px;cursor:pointer;border:1.5px solid var(--accent)}
+.btn.pri{background:var(--accent);color:var(--accent-ink)}
+.btn.sec{background:transparent;color:var(--accent)}
+.btn[hidden]{display:none}
+.saved{font-size:13px;color:var(--ink-soft)}
+.err{color:var(--danger);font-size:14px;margin-top:6px}
+.card{background:var(--surface);border:1.5px solid var(--line);border-radius:14px;padding:18px;white-space:pre-wrap;font-size:14.5px;line-height:1.55;max-height:420px;overflow:auto}
+.actions{display:grid;gap:10px;margin:20px 0}
+.note{background:var(--accent);color:var(--accent-ink);border-radius:12px;padding:16px 18px}.note strong{display:block;font-family:"Cormorant Garamond",Georgia,serif;font-size:26px;line-height:1.1;margin-bottom:6px}.note p{margin:0 0 12px;font-size:15.5px}.note a{display:inline-block;background:var(--accent-ink);color:var(--accent);font-weight:600;text-decoration:none;border-radius:999px;padding:10px 18px}.field[hidden]{display:none}
+.toast{margin-top:8px;font-size:14px;color:var(--ink-soft);min-height:20px}
+@media (prefers-reduced-motion:reduce){.fill{transition:none}}
+.top-nav{background:var(--surface);border-bottom:1px solid var(--line);padding:10px 20px;font-size:13px}
+.top-nav-in{max-width:680px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+.top-nav a{color:var(--accent);text-decoration:none;font-weight:600}
+.top-nav a:hover{text-decoration:underline}
+.top-nav .badge{color:var(--ink-soft);font-size:12px;text-transform:uppercase;letter-spacing:.05em;font-weight:700}
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NFG6G89X"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1316986016846604&ev=PageView&noscript=1"/></noscript>
+<div class="top-nav">
+  <div class="top-nav-in">
+    <a href="/obrigado/" class="back-link">← Voltar para a confirmação da inscrição</a>
+    <span class="badge">Masterclass Agenda Cheia com IA</span>
+  </div>
+</div>
+<div class="wrap" id="app"></div>
+<nav class="nav" id="nav" hidden><div class="in">
+  <button class="btn sec" id="prev" type="button">Voltar</button>
+  <span class="saved" id="saved"></span>
+  <button class="btn pri" id="next" type="button">Continuar</button>
+</div></nav>
+
+<script>
+const WHATS = "5511985798767";
+const STEPS = [
+ {id:"negocio", title:"O seu negócio", intro:"O básico que aparece em todo post, anúncio e no site.", fields:[
+  {k:"nome",l:"Nome do negócio",t:"text",req:1},
+  {k:"responsavel",l:"Seu nome e como gosta de ser chamado(a)",t:"text",req:1},
+  {k:"whatsapp",l:"WhatsApp para agendamento",t:"tel",req:1},
+  {k:"tipo",l:"Que tipo de casa é a sua?",t:"radio",req:1,o:["Barbearia conceito","Barbearia tradicional","Salão de beleza","Studio / espaço autoral","Clínica de estética","Espaço misto (barbearia + beleza)"]},
+  {k:"cidade",l:"Cidade e bairro",t:"text",req:1},
+  {k:"endereco",l:"Endereço completo",t:"text"},
+  {k:"referencia",l:"Ponto de referência perto de vocês",h:"Ex: ao lado do mercado X, em frente à praça. Ajuda o Google e as IAs a indicarem vocês.",t:"text"},
+  {k:"horario",l:"Dias e horários de atendimento",t:"text"},
+  {k:"tempo",l:"Há quanto tempo o negócio existe?",t:"text"},
+  {k:"cadeiras",l:"Quantas cadeiras / salas e quantos profissionais?",t:"text"},
+  {k:"bairros",l:"Bairros vizinhos de onde vêm seus clientes",t:"text"}
+ ]},
+ {id:"historia", title:"A sua história", intro:"É isso que diferencia vocês de qualquer outra casa do bairro. Escreva como se estivesse contando para um cliente na cadeira.", fields:[
+  {k:"comeco",l:"Como tudo começou?",h:"Quem abriu, por quê, de onde veio, o que fazia antes.",t:"textarea",req:1},
+  {k:"viradas",l:"Quais foram as 3 grandes viradas até aqui?",h:"Ex: o primeiro cliente fiel, a mudança de ponto, o curso que mudou tudo.",t:"textarea"},
+  {k:"dificil",l:"O momento mais difícil e como vocês superaram",t:"textarea"},
+  {k:"porque",l:"Por que o cliente escolhe vocês e não a casa ao lado?",t:"textarea",req:1},
+  {k:"frase",l:"Se pudesse escrever uma frase na parede da casa, qual seria?",t:"text"},
+  {k:"naonegociaveis",l:"O que vocês não fazem de jeito nenhum?",h:"Seus não negociáveis: atraso, corte mal feito, falta de higiene, desconto que desvaloriza…",t:"textarea"}
+ ]},
+ {id:"servicos", title:"Serviços e ofertas", intro:"O cardápio da casa. Com isso a IA sabe o que anunciar e o que usar como porta de entrada.", fields:[
+  {k:"lista",l:"Serviços, preço e tempo",t:"list",add:"Adicionar serviço",sub:[{k:"s",p:"Serviço (ex: corte + barba)"},{k:"p",p:"Preço (R$)"},{k:"m",p:"Tempo (min)"}],req:1},
+  {k:"carrochefe",l:"Qual é o carro-chefe (o que mais sai)?",t:"text"},
+  {k:"lucro",l:"Qual serviço dá mais lucro?",t:"text"},
+  {k:"combos",l:"Combos ou pacotes que vocês já oferecem",t:"textarea"},
+  {k:"especiais",l:"Serviços especiais",t:"multi",o:["Visagismo","Dia do noivo","Química / coloração","Barboterapia","Infantil","Tratamentos faciais","Depilação","Unhas","Maquiagem","Cílios e sobrancelha","Atendimento em domicílio"]},
+  {k:"clube",l:"Clube de assinatura",t:"radio",o:["Já temos","Queremos criar","Não temos interesse"]},
+  {k:"clubedetalhe",l:"Se já tem clube: como funciona e quanto custa?",t:"textarea"},
+  {k:"produtos",l:"Produtos que vendem na casa (pomadas, óleos, cosméticos…)",t:"textarea"}
+ ]},
+ {id:"experiencia", title:"Experiência e equipe", intro:"O que o cliente vive quando entra. E quem são os personagens da casa nos vídeos.", fields:[
+  {k:"ritual",l:"Descreva o atendimento do começo ao fim",h:"Da recepção até o pós-atendimento. O que vocês fazem que ninguém faz?",t:"textarea",req:1},
+  {k:"espaco",l:"O que tem no espaço?",t:"multi",o:["Cerveja / chope","Café e água","Drinks","Sinuca / games","TV com jogos","Música ambiente","Área kids","Estacionamento","Wi-Fi","Acessibilidade","Ar-condicionado","Loja de produtos"]},
+  {k:"clima",l:"Em 3 palavras: como é o clima da casa?",h:"Ex: descontraído, elegante, acolhedor.",t:"text"},
+  {k:"equipe",l:"Equipe",h:"Cada profissional pode virar personagem de conteúdo.",t:"list",add:"Adicionar profissional",sub:[{k:"n",p:"Nome"},{k:"e",p:"Especialidade"},{k:"j",p:"Jeito / personalidade"},{k:"v",p:"Topa gravar vídeo? (sim/não)"}]}
+ ]},
+ {id:"publico", title:"Quem é o seu cliente", intro:"Para cada criativo falar com a pessoa certa, com as palavras dela.", fields:[
+  {k:"atende",l:"Quem vocês atendem",t:"multi",o:["Homens","Mulheres","Crianças","Público LGBTQIA+","Noivos e noivas","Executivos","Universitários","Terceira idade"]},
+  {k:"ideal",l:"Descreva o seu cliente favorito",h:"Idade, profissão, estilo, o que ele valoriza.",t:"textarea",req:1},
+  {k:"ticket",l:"Ticket médio por atendimento (R$)",t:"text"},
+  {k:"retorno",l:"De quanto em quanto tempo o cliente volta?",t:"text"},
+  {k:"elogios",l:"O que os clientes mais elogiam? (frases reais, se lembrar)",t:"textarea"},
+  {k:"objecoes",l:"O que faz um cliente desistir ou reclamar?",h:"Preço, demora, distância, agenda cheia…",t:"textarea"},
+  {k:"perguntas",l:"As 5 perguntas que mais chegam no WhatsApp",t:"textarea"},
+  {k:"concorrentes",l:"Concorrentes no bairro e o que vocês fazem melhor",t:"textarea"}
+ ]},
+ {id:"visual", title:"Marca e visual", intro:"Para tudo sair com a cara de vocês, sem misturar identidades.", fields:[
+  {k:"logo",l:"Vocês têm logo?",t:"radio",o:["Sim, profissional","Sim, mas quero melhorar","Não temos"]},
+  {k:"pasta",l:"Link da pasta com logo e fotos (Google Drive)",h:"Fotos do espaço, da equipe, de cortes e trabalhos, e antes/depois.",t:"url"},
+  {k:"cores",l:"Cores da marca",h:"Toque no quadrado para escolher, ou digite o código (ex: #063940).",t:"colors"},
+  {k:"fontes",l:"Fontes que usam (se souber)",t:"text"},
+  {k:"estilo",l:"Estilo visual",t:"multi",o:["Clássico","Moderno","Urbano / street","Rústico / vintage","Luxo","Minimalista","Industrial","Tropical / colorido"]},
+  {k:"tom",l:"Como a marca fala",t:"multi",o:["Descontraído","Sofisticado","Acolhedor","Bem-humorado","Direto","Inspirador","Técnico"]},
+  {k:"palavras",l:"3 palavras que definem a marca",t:"text",req:1},
+  {k:"naoquer",l:"O que vocês NÃO querem ver na marca",h:"Cores, tipo de foto, linguagem, gírias…",t:"textarea"},
+  {k:"referencias",l:"Perfis que vocês admiram (@)",t:"textarea"}
+ ]},
+ {id:"busca", title:"Google, site e Instagram", intro:"As IAs e o Google só indicam quem conseguem encontrar. Sem Google Meu Negócio e sem site, sobra só o Instagram, e ele precisa estar bem configurado. Responda o que souber: “não sei” também é resposta.", fields:[
+  {k:"gmn",l:"Vocês têm perfil no Google Meu Negócio (a ficha que aparece no Google Maps)?",t:"radio",req:1,o:["Sim, eu mesmo cuido","Sim, mas outra pessoa cuida","Não tenho","Não sei"]},
+  {k:"gmnacesso",l:"Você tem o login e a senha desse perfil?",t:"radio",o:["Sim","Não, está com outra pessoa","Não sei"]},
+  {k:"gmnpost",l:"Com que frequência alguém posta ou atualiza o Google Meu Negócio?",t:"radio",o:["Toda semana","Uma vez por mês","Quase nunca","Nunca postamos lá","Não sei"]},
+  {k:"gmncuida",l:"No Google, o que já está em dia?",t:"multi",o:["Horário certo","Fotos recentes","Telefone e WhatsApp","Link do site ou agenda","Lista de serviços","Respondemos as avaliações"]},
+  {k:"gmntexto",l:"O que você gostaria que estivesse escrito no seu Google Meu Negócio?",h:"Como você quer ser apresentado para quem procura no Google. Escreva do seu jeito, a gente lapida.",t:"textarea",req:1},
+  {k:"categoria",l:"Como o cliente procuraria vocês no Google?",h:"Ex: “barbearia no Batel”, “corte degradê perto de mim”, “dia do noivo em Curitiba”.",t:"textarea",req:1},
+  {k:"site",l:"Vocês têm site?",t:"radio",req:1,o:["Sim","Não"]},
+  {k:"sitelink",l:"Qual é o endereço do site?",t:"url",req:1,show:{k:"site",v:["Sim"]}},
+  {k:"indexado",l:"O site já foi enviado ao Google e ao Bing (sitemap)?",t:"radio",o:["Sim","Não","Não sei o que é isso"],show:{k:"site",v:["Sim"]}},
+  {k:"dominiocomprado",l:"Você já tem o domínio comprado? (ex: suabarbearia.com.br)",t:"radio",req:1,o:["Sim, já comprei","Ainda não"],show:{k:"site",v:["Não"]}},
+  {k:"dominio",l:"Qual é o domínio?",h:"Se ainda não comprou, escreva o que pretende comprar.",t:"text",req:1,show:{k:"site",v:["Não"]}},
+  {k:"avisodominio",t:"note",show:{k:"dominiocomprado",v:["Ainda não"]},l:"Compre o seu domínio antes da aula",h:"Entre no registro.br, pesquise o nome da sua casa e compre o domínio .com.br (custa em torno de R$ 40 por ano). Vamos precisar dele na aula para colocar o seu site no ar. Guarde o e-mail e a senha de acesso do registro.br.",link:"https://registro.br"},
+  {k:"paginas",l:"O que você gostaria de ter no seu site?",t:"multi",req:1,o:["Serviços e preços","Agendamento online","Botão de WhatsApp","Equipe","Galeria e antes/depois","Nossa história","Depoimentos","Localização e mapa","Clube de assinatura","Loja de produtos","Perguntas frequentes","Dicas / blog","Vale-presente"]},
+  {k:"agenda",l:"Usam aplicativo ou link de agendamento? Qual?",t:"text"},
+  {k:"instagram",l:"@ do Instagram",t:"text",req:1},
+  {k:"insta",l:"No Instagram, o que já está configurado?",t:"multi",o:["Conta profissional","Categoria (ex: barbearia)","Endereço na bio","Link de agenda ou WhatsApp","Botão de reservar / contato","Destaques organizados","Foto de perfil com a marca"]},
+  {k:"quemposta",l:"Quem cuida das redes hoje?",t:"radio",o:["Eu mesmo","Alguém da equipe","Agência / social media","Ninguém"]}
+ ]},
+ {id:"metas", title:"Presença digital e metas", intro:"Onde vocês estão hoje e onde querem chegar.", fields:[
+  {k:"frequencia",l:"Com que frequência postam hoje?",t:"radio",o:["Todo dia","Algumas vezes por semana","De vez em quando","Quase nunca"]},
+  {k:"formatos",l:"Que tipo de conteúdo já fizeram?",t:"multi",o:["Antes e depois","Novelinha","React","Bastidores","Dicas","Depoimentos","Trends","Lives"]},
+  {k:"funcionou",l:"Algum post ou vídeo que funcionou muito bem? Qual e por quê?",t:"textarea"},
+  {k:"google",l:"Avaliações no Google (nota e quantidade)",t:"text"},
+  {k:"trafego",l:"Já fizeram anúncio pago?",t:"radio",o:["Sim, com resultado","Sim, sem resultado","Só impulsionar post","Nunca"]},
+  {k:"verba",l:"Quanto podem investir em anúncio por mês?",t:"radio",o:["Até R$ 300","R$ 300 a R$ 800","R$ 800 a R$ 2.000","Acima de R$ 2.000","Ainda não sei"]},
+  {k:"vazios",l:"Quais dias e horários ficam mais vazios?",h:"Essa resposta vira criativo e campanha direto.",t:"textarea",req:1},
+  {k:"meta",l:"Qual é a meta para os próximos 90 dias?",t:"textarea",req:1},
+  {k:"datas",l:"Datas importantes para a casa",t:"multi",o:["Dia dos Pais","Dia das Mães","Novembro Azul","Outubro Rosa","Natal e Réveillon","Carnaval","Formaturas","Volta às aulas","Aniversário da casa","Copa / jogos"]},
+  {k:"imagem",l:"Autorizo o uso das informações, fotos e da marca para criação de conteúdo e anúncios",t:"radio",req:1,o:["Sim, autorizo","Quero conversar antes"]}
+ ]}
+];
+
+const KEY="raiox-beleza-v1";
+let dlApi=null;
+if(window.claude&&window.claude.use){window.claude.use("downloads").then(x=>{dlApi=x;const d=document.getElementById("dl");if(d)d.hidden=!x;}).catch(()=>{});}
+let data={}, step=-1;
+try{const s=localStorage.getItem(KEY);if(s){const o=JSON.parse(s);data=o.data||{};}}catch(e){}
+function save(){try{localStorage.setItem(KEY,JSON.stringify({data}));const el=document.getElementById("saved");el.textContent="Rascunho salvo neste aparelho";}catch(e){}}
+
+const app=document.getElementById("app"),nav=document.getElementById("nav"),prev=document.getElementById("prev"),next=document.getElementById("next");
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+function renderIntro(){
+  nav.hidden=true;
+  const has=Object.keys(data).length>0;
+  app.innerHTML=`
+  <p class="step-count">Diagnóstico Prosperar Ideias</p>
+  <h1>Raio-X do seu negócio de beleza</h1>
+  <p class="lead">Barbearia, salão, studio ou estética: responda com calma e com as suas palavras. É a partir daqui que vamos criar seus carrosséis, anúncios, roteiros de vídeo e site com a cara da sua casa.</p>
+  <p class="lead">São 8 etapas e leva de 20 a 30 minutos. Suas respostas ficam salvas neste aparelho enquanto você preenche.</p>
+  <div class="actions"><button class="btn pri" id="go" type="button">${has?"Continuar de onde parei":"Começar o raio-x"}</button>
+  ${has?'<button class="btn sec" id="reset" type="button">Começar do zero</button>':""}</div>
+  <p class="sign">Silvana Rosa · Estrategista de Negócios e Growth</p>`;
+  document.getElementById("go").onclick=()=>go(0);
+  const r=document.getElementById("reset");
+  if(r) r.onclick=()=>{if(confirm("Apagar as respostas salvas e começar de novo?")){data={};try{localStorage.removeItem(KEY)}catch(e){}renderIntro();}};
+}
+
+function fieldHTML(f){
+  if(f.t==="note") return `<div class="field" data-k="${f.k}"><div class="note" role="note"><strong>${esc(f.l)}</strong><p>${esc(f.h)}</p><a href="${f.link}" target="_blank" rel="noopener">Abrir registro.br</a></div><div class="err"></div></div>`;
+  const v=data[f.k], req=f.req?" *":"";
+  let h=`<div class="field" data-k="${f.k}"><${["radio","multi","list","colors"].includes(f.t)?'div class="lbl"':'label for="f_'+f.k+'"'}>${esc(f.l)}${req}</${["radio","multi","list","colors"].includes(f.t)?"div":"label"}>`;
+  if(f.h) h+=`<p class="hint">${esc(f.h)}</p>`;
+  if(["text","tel","url"].includes(f.t)) h+=`<input id="f_${f.k}" type="${f.t}" value="${esc(v)}" autocomplete="off">`;
+  else if(f.t==="textarea") h+=`<textarea id="f_${f.k}">${esc(v)}</textarea>`;
+  else if(f.t==="radio"||f.t==="multi"){
+    const arr=f.t==="multi"?(v||[]):[v];
+    h+=`<div class="chips" role="group">`+f.o.map(o=>`<button type="button" class="chip" data-v="${esc(o)}" aria-pressed="${arr.includes(o)}">${esc(o)}</button>`).join("")+`</div>`;
+    if(f.t==="multi") h+=`<input type="text" class="outro" placeholder="Outro (opcional)" value="${esc(data[f.k+"_outro"])}" style="margin-top:10px">`;
+  }
+  else if(f.t==="colors"){
+    const c=v||["#000000","#ffffff","#888888"];
+    h+=`<div class="colors">`+["Principal","Secundária","Destaque"].map((n,i)=>`<div class="color"><small>${n}</small><input type="color" data-i="${i}" value="${esc(c[i])}" aria-label="Cor ${n}"><input type="text" data-hex="${i}" value="${esc(c[i])}" aria-label="Código da cor ${n}"></div>`).join("")+`</div>`;
+  }
+  else if(f.t==="list"){
+    const items=(v&&v.length)?v:[{}];
+    h+=`<div class="items">`+items.map((it,i)=>itemHTML(f,it,i)).join("")+`</div><button type="button" class="add">+ ${esc(f.add)}</button>`;
+  }
+  return h+`<div class="err" aria-live="polite"></div></div>`;
+}
+function itemHTML(f,it,i){
+  const ins=f.sub.map(s=>`<input type="text" data-s="${s.k}" placeholder="${esc(s.p)}" value="${esc(it[s.k])}">`);
+  const body=f.sub.length===3?`${ins[0]}<div class="row">${ins[1]}${ins[2]}</div>`:`${ins[0]}${ins[1]}${ins[2]}${ins[3]||""}`;
+  return `<div class="item">${body}<button type="button" class="del">Remover</button></div>`;
+}
+
+function collect(){
+  STEPS[step].fields.forEach(f=>{
+    const box=app.querySelector(`[data-k="${f.k}"]`);
+    if(f.t==="note") return;
+    if(box.hidden){delete data[f.k];return;}
+    if(["text","tel","url","textarea"].includes(f.t)) data[f.k]=box.querySelector("input,textarea").value.trim();
+    else if(f.t==="radio"){const p=box.querySelector('.chip[aria-pressed="true"]');data[f.k]=p?p.dataset.v:"";}
+    else if(f.t==="multi"){data[f.k]=[...box.querySelectorAll('.chip[aria-pressed="true"]')].map(b=>b.dataset.v);data[f.k+"_outro"]=box.querySelector(".outro").value.trim();}
+    else if(f.t==="colors") data[f.k]=[0,1,2].map(i=>box.querySelector(`[data-hex="${i}"]`).value.trim());
+    else if(f.t==="list") data[f.k]=[...box.querySelectorAll(".item")].map(it=>{const o={};it.querySelectorAll("input").forEach(x=>o[x.dataset.s]=x.value.trim());return o;}).filter(o=>Object.values(o).some(Boolean));
+  });
+  save();
+}
+function validate(){
+  let ok=true,first=null;
+  STEPS[step].fields.forEach(f=>{
+    const box=app.querySelector(`[data-k="${f.k}"]`),err=box.querySelector(".err");err.textContent="";
+    if(!f.req||box.hidden) return;
+    const v=data[f.k];const empty=!v||(Array.isArray(v)&&!v.length);
+    if(empty){ok=false;err.textContent="Preencha este campo para continuar.";first=first||box;}
+  });
+  if(first) first.scrollIntoView({behavior:"smooth",block:"center"});
+  return ok;
+}
+
+function renderStep(){
+  const s=STEPS[step];nav.hidden=false;document.getElementById("saved").textContent="";
+  app.innerHTML=`<div class="bar"><p class="step-count">Etapa ${step+1} de ${STEPS.length}</p><div class="track"><div class="fill" style="width:${(step+1)/STEPS.length*100}%"></div></div></div>
+  <h2>${esc(s.title)}</h2><p class="intro-step">${esc(s.intro)}</p>`+s.fields.map(fieldHTML).join("");
+  next.textContent=step===STEPS.length-1?"Gerar meu raio-x":"Continuar";
+  bind();window.scrollTo(0,0);
+}
+function current(k){const box=app.querySelector(`[data-k="${k}"]`);if(!box)return data[k];const p=box.querySelector('.chip[aria-pressed="true"]');return p?p.dataset.v:"";}
+function visibility(){
+  STEPS[step].fields.forEach(f=>{if(!f.show)return;const box=app.querySelector(`[data-k="${f.k}"]`);
+    const parent=app.querySelector(`[data-k="${f.show.k}"]`);
+    box.hidden=!(parent&&!parent.hidden&&f.show.v.includes(current(f.show.k)));});
+  STEPS[step].fields.forEach(f=>{if(!f.show)return;const box=app.querySelector(`[data-k="${f.k}"]`);const parent=app.querySelector(`[data-k="${f.show.k}"]`);if(parent&&parent.hidden)box.hidden=true;});
+}
+function bind(){
+  visibility();
+  app.querySelectorAll(".field").forEach(box=>{
+    const f=STEPS[step].fields.find(x=>x.k===box.dataset.k);
+    box.addEventListener("input",()=>{box.querySelector(".err").textContent="";});
+    if(f.t==="radio"||f.t==="multi") box.querySelectorAll(".chip").forEach(b=>b.onclick=()=>{
+      if(f.t==="radio") box.querySelectorAll(".chip").forEach(x=>x.setAttribute("aria-pressed","false"));
+      b.setAttribute("aria-pressed",f.t==="radio"?"true":String(b.getAttribute("aria-pressed")!=="true"));
+      box.querySelector(".err").textContent="";
+      visibility();
+    });
+    if(f.t==="colors"){
+      box.querySelectorAll('input[type=color]').forEach(c=>c.oninput=()=>{box.querySelector(`[data-hex="${c.dataset.i}"]`).value=c.value;});
+      box.querySelectorAll('[data-hex]').forEach(t=>t.oninput=()=>{if(/^#[0-9a-fA-F]{6}$/.test(t.value))box.querySelector(`[data-i="${t.dataset.hex}"]`).value=t.value;});
+    }
+    if(f.t==="list"){
+      const wrap=box.querySelector(".items");
+      box.querySelector(".add").onclick=()=>{wrap.insertAdjacentHTML("beforeend",itemHTML(f,{},0));wireDel();wrap.lastElementChild.querySelector("input").focus();};
+      const wireDel=()=>wrap.querySelectorAll(".del").forEach(d=>d.onclick=()=>{if(wrap.children.length>1)d.parentElement.remove();else d.parentElement.querySelectorAll("input").forEach(i=>i.value="");});
+      wireDel();
+    }
+  });
+}
+function go(i){step=i;if(step<0)renderIntro();else if(step>=STEPS.length)renderFinal();else renderStep();}
+prev.onclick=()=>{collect();go(step-1);};
+next.onclick=()=>{collect();if(!validate())return;go(step+1);};
+
+const j=a=>Array.isArray(a)?a.filter(Boolean).join(", "):(a||"");
+const multi=k=>[j(data[k]),data[k+"_outro"]].filter(Boolean).join(", ");
+const val=x=>x&&String(x).trim()?x:"(não informado)";
+
+function diagnostico(d){
+  const a=[],has=(k,v)=>(d[k]||[]).includes(v);
+  const semGMN=["Não tenho","Não sei"].includes(d.gmn), semSite=d.site==="Não";
+  if(semGMN) a.push("CRÍTICO: sem Google Meu Negócio confirmado. Criar ou recuperar o perfil (categoria, endereço, horário, fotos, serviços, link).");
+  else{
+    if(d.gmnacesso&&d.gmnacesso!=="Sim") a.push("Recuperar o acesso ao Google Meu Negócio: o dono precisa ser proprietário do perfil.");
+    if(["Quase nunca","Nunca postamos lá","Não sei"].includes(d.gmnpost)) a.push("Google Meu Negócio parado: criar rotina de postagem semanal e atualizar fotos.");
+    if(!has("gmncuida","Respondemos as avaliações")) a.push("Responder todas as avaliações do Google, inclusive as antigas.");
+  }
+  if(semSite&&d.dominiocomprado!=="Sim, já comprei") a.push("URGENTE: domínio ainda não comprado. Comprar no registro.br antes da aula"+(d.dominio?" ("+d.dominio+")":"")+".");
+  if(semSite) a.push("CRÍTICO: sem site próprio. Gerar o site com a skill de site, publicar com domínio, criar sitemap.xml e enviar ao Google Search Console e ao Bing Webmaster Tools.");
+  else if(d.indexado!=="Sim") a.push("Site existe mas não foi confirmado no Google e no Bing: gerar sitemap.xml e enviar aos dois.");
+  if(semGMN&&semSite) a.push("Hoje as IAs praticamente não conseguem indicar este negócio. Até o site e o GMN ficarem prontos, o Instagram precisa estar 100% configurado.");
+  const insta=["Conta profissional","Categoria (ex: barbearia)","Endereço na bio","Link de agenda ou WhatsApp","Botão de reservar / contato"].filter(x=>!has("insta",x));
+  if(insta.length) a.push("Instagram: falta configurar "+insta.join(", ")+".");
+  if(["Agência / social media","Ninguém"].includes(d.quemposta)) a.push("Redes delegadas ou sem dono: definir quem posta e com que frequência.");
+  return a.length?a.map((x,i)=>`${i+1}. ${x}`).join("\n"):"Presença de busca em dia. Foco em conteúdo e campanhas.";
+}
+function slug(x){return x.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");}
+function sitemap(d){
+  const map={"Serviços e preços":"servicos","Equipe":"equipe","Galeria e antes/depois":"galeria","Nossa história":"sobre","Depoimentos":"depoimentos","Localização e mapa":"contato","Clube de assinatura":"clube","Loja de produtos":"loja","Perguntas frequentes":"perguntas-frequentes","Dicas / blog":"blog","Vale-presente":"vale-presente","Agendamento online":"agendar"};
+  const pg=["/ (início)"];(d.paginas||[]).forEach(x=>{if(map[x])pg.push("/"+map[x]);});
+  if(d.paginas_outro) pg.push("/"+slug(d.paginas_outro));
+  return pg.join("\n");
+}
+function cartao(){
+  const d=data,c=d.cores||[];
+  const serv=(d.lista||[]).map(s=>`- ${s.s||"?"}: R$ ${s.p||"?"} · ${s.m||"?"} min`).join("\n")||"(não informado)";
+  const eq=(d.equipe||[]).map(e=>`- ${e.n||"?"}: ${e.e||""}${e.j?" · jeito: "+e.j:""}${e.v?" · grava vídeo: "+e.v:""}`).join("\n")||"(não informado)";
+  return `# CARTÃO DE MARCA · ${val(d.nome)}
+Raio-X Prosperar Ideias · gerado em ${new Date().toLocaleDateString("pt-BR")}
+
+## INSTRUÇÕES PARA A SKILL
+Use SOMENTE estas cores: ${c.filter(Boolean).join(" / ")||"(não informado)"} (principal / secundária / destaque).
+Fontes: ${val(d.fontes)}. Estilo visual: ${val(multi("estilo"))}. Tom de voz: ${val(multi("tom"))}.
+Nunca usar: ${val(d.naoquer)}
+Toda peça deve citar bairro/cidade (${val(d.cidade)}) e terminar com CTA para o WhatsApp ${val(d.whatsapp)}.
+
+## DIAGNÓSTICO DE PRESENÇA (prioridades)
+${diagnostico(d)}
+
+## INSTRUÇÕES PARA A SKILL DE SITE
+Domínio: ${val(d.sitelink||d.dominio)}${d.dominiocomprado?" · "+d.dominiocomprado:""}
+Mapa do site (sitemap):
+${sitemap(d)}
+Todas as páginas com botão de WhatsApp ${val(d.whatsapp)}${d.agenda?" e link de agenda ("+d.agenda+")":""}.
+Palavras-chave locais (usar em títulos, descrições e textos): ${val(d.categoria)}
+Bairros para citar: ${val(d.cidade)}${d.bairros?", "+d.bairros:""}
+Dados para Schema LocalBusiness: ${val(d.nome)} · ${val(d.endereco)} · ${val(d.horario)} · ${val(d.whatsapp)}
+Depois de publicar: gerar sitemap.xml e robots.txt, enviar ao Google Search Console e ao Bing Webmaster Tools, e colocar o link do site no Google Meu Negócio e na bio do Instagram.
+
+## GOOGLE MEU NEGÓCIO
+Situação: ${val(d.gmn)} · Acesso: ${val(d.gmnacesso)} · Postagem: ${val(d.gmnpost)}
+Já em dia: ${val(multi("gmncuida"))}
+Texto que o dono quer no perfil: ${val(d.gmntexto)}
+
+## INSTAGRAM
+Perfil: ${val(d.instagram)} · Quem cuida: ${val(d.quemposta)}
+Já configurado: ${val(multi("insta"))}
+
+## IDENTIDADE
+Tipo de casa: ${val(d.tipo)}
+Responsável: ${val(d.responsavel)}
+Endereço: ${val(d.endereco)} · Referência: ${val(d.referencia)}
+Horário: ${val(d.horario)} · Tempo de casa: ${val(d.tempo)} · Estrutura: ${val(d.cadeiras)}
+3 palavras da marca: ${val(d.palavras)}
+Clima da casa: ${val(d.clima)}
+
+## HISTÓRIA (base para carrosséis de autoridade)
+Começo: ${val(d.comeco)}
+Viradas: ${val(d.viradas)}
+Momento difícil: ${val(d.dificil)}
+Por que nos escolhem: ${val(d.porque)}
+Frase na parede: ${val(d.frase)}
+Não negociáveis: ${val(d.naonegociaveis)}
+
+## SERVIÇOS E OFERTAS
+${serv}
+Carro-chefe: ${val(d.carrochefe)} · Mais lucrativo: ${val(d.lucro)}
+Combos: ${val(d.combos)}
+Especiais: ${val(multi("especiais"))}
+Clube de assinatura: ${val(d.clube)} ${d.clubedetalhe?"· "+d.clubedetalhe:""}
+Produtos: ${val(d.produtos)}
+
+## EXPERIÊNCIA E EQUIPE (personagens para reels)
+Ritual de atendimento: ${val(d.ritual)}
+No espaço: ${val(multi("espaco"))}
+${eq}
+
+## PÚBLICO
+Atende: ${val(multi("atende"))}
+Cliente favorito: ${val(d.ideal)}
+Ticket médio: ${val(d.ticket)} · Retorno: ${val(d.retorno)}
+Elogios reais: ${val(d.elogios)}
+Objeções: ${val(d.objecoes)}
+Perguntas no WhatsApp (FAQ do site e do atendente IA): ${val(d.perguntas)}
+Concorrência e diferencial: ${val(d.concorrentes)}
+
+## PRESENÇA DIGITAL
+Frequência de postagem: ${val(d.frequencia)}
+Formatos já feitos: ${val(multi("formatos"))}
+O que funcionou: ${val(d.funcionou)}
+Avaliações no Google: ${val(d.google)}
+Anúncios: ${val(d.trafego)} · Verba mensal: ${val(d.verba)}
+Logo: ${val(d.logo)} · Pasta de fotos: ${val(d.pasta)}
+Referências admiradas: ${val(d.referencias)}
+
+## METAS E CAMPANHAS
+Horários vazios (prioridade de campanha): ${val(d.vazios)}
+Meta 90 dias: ${val(d.meta)}
+Datas da casa: ${val(multi("datas"))}
+Uso de imagem: ${val(d.imagem)}
+`;
+}
+
+function renderFinal(){
+  nav.hidden=true;const txt=cartao();
+  app.innerHTML=`<h2>Seu raio-x está pronto</h2>
+  <p class="lead">Envie para a Silvana pelo WhatsApp e baixe uma cópia para você. Se preferir, copie o texto e cole onde quiser.</p>
+  <div class="card" id="card">${esc(txt)}</div>
+  <div class="actions">
+   <button class="btn pri" id="wa" type="button">Enviar pelo WhatsApp</button>
+   <button class="btn sec" id="dl" type="button">Baixar meu raio-x</button>
+   <button class="btn sec" id="cp" type="button">Copiar texto</button>
+   <button class="btn sec" id="ed" type="button">Revisar respostas</button>
+  </div><p class="toast" id="toast" aria-live="polite"></p>
+  <p class="hint">Fotos e logo: mande o link da pasta no campo da etapa 6 ou envie direto no WhatsApp.</p>`;
+  const toast=m=>document.getElementById("toast").textContent=m;
+  document.getElementById("wa").onclick=()=>{
+    let t=txt;if(t.length>6000){t=t.slice(0,6000)+"\n\n(continua no arquivo que vou enviar em seguida)";toast("O texto é longo: baixe o arquivo e envie junto no WhatsApp.");}
+    window.open(`https://wa.me/${WHATS}?text=${encodeURIComponent(t)}`,"_blank");
+  };
+  document.getElementById("dl").onclick=async()=>{
+    const name=(data.nome||"negocio").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[^a-z0-9]+/g,"-");
+    if(!window.claude){const b=new Blob([txt],{type:"text/markdown;charset=utf-8"}),a=document.createElement("a");a.href=URL.createObjectURL(b);a.download=`raio-x-${name}.md`;document.body.appendChild(a);a.click();a.remove();toast("Arquivo baixado.");return;}
+    if(!dlApi){toast("Baixar não está disponível aqui. Use “Copiar texto”.");return;}
+    try{await dlApi.save({filename:`raio-x-${name}.md`,data:new Blob([txt],{type:"text/markdown;charset=utf-8"})});toast("Arquivo baixado.");}
+    catch(e){toast(e&&e.code==="declined"?"Download cancelado.":"Não foi possível baixar agora. Use “Copiar texto”.");}
+  };
+  if(window.claude&&!dlApi) document.getElementById("dl").hidden=true;
+  document.getElementById("cp").onclick=async()=>{try{await navigator.clipboard.writeText(txt);toast("Texto copiado.");}catch(e){toast("Não deu para copiar automaticamente. Selecione o texto no quadro e copie.");}};
+  document.getElementById("ed").onclick=()=>go(0);
+  window.scrollTo(0,0);
+}
+renderIntro();
+</script>
+</body>
+</html>

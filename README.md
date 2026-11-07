@@ -1,11 +1,11 @@
 # Masterclass Impulse · IA aplicada à barbearia
 
-Página de vendas (`/`) e página de obrigado (`/obrigado/`) da masterclass de Silvana Rosa e Mateus Barone.
+Página de vendas (`/`), página de obrigado (`/obrigado/`) e página de diagnóstico Raio-X do Negócio (`/raiox/`) da masterclass de Silvana Rosa e Mateus Barone.
 Site estático servido por **Nginx** em **Docker**, pronto para o **Easypanel**.
 
-Rastreamento já instalado nas duas páginas:
+Rastreamento já instalado nas páginas:
 - Google Tag Manager: `GTM-NFG6G89X`
-- Pixel da Meta: `1316986016846604` (PageView + InitiateCheckout na LP e Purchase na página de obrigado)
+- Pixel da Meta: `1316986016846604` (PageView + InitiateCheckout na LP, Purchase na página de obrigado e PageView no Raio-X)
 
 ## Deploy no Easypanel
 
@@ -28,6 +28,8 @@ Para atualizar a página: envie as alterações para a branch `main` e clique em
 ```
 site/index.html            página de vendas
 site/obrigado/index.html   página de obrigado (configure como URL de obrigado na Greenn)
+site/raiox/index.html      ficha de diagnóstico / raio-x do negócio
+site/videos/               vídeo otimizado em MP4
 Dockerfile                 imagem nginx:alpine
 nginx.conf                 configuração do servidor
 ```

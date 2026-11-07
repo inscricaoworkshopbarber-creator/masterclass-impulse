@@ -1,4 +1,6 @@
 .env
 public/
 *.mov
+.docs
+.docs/
 
