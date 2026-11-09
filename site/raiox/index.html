@@ -93,6 +93,17 @@ input:focus,textarea:focus,select:focus{outline:none;border-color:var(--accent);
 .top-nav a{color:var(--accent);text-decoration:none;font-weight:600}
 .top-nav a:hover{text-decoration:underline}
 .top-nav .badge{color:var(--ink-soft);font-size:12px;text-transform:uppercase;letter-spacing:.05em;font-weight:700}
+.print-header{display:none}
+@media print{
+  @page{margin:16mm 14mm 16mm 14mm;size:A4 portrait}
+  body{background:#fff !important;color:#111 !important;font-size:11pt;line-height:1.55}
+  body::before,.top-nav,.nav,.actions,.toast,.hint,h2,p.lead,.sign{display:none !important}
+  .wrap{max-width:100% !important;margin:0 !important;padding:0 !important}
+  .print-header{display:block !important;border-bottom:2px solid #063940;padding-bottom:12px;margin-bottom:18px}
+  .print-header h1{font-family:"Cormorant Garamond",Georgia,serif;font-size:24pt;line-height:1.1;margin:0 0 4px;color:#063940}
+  .print-header p{font-size:10.5pt;color:#555;margin:0}
+  .card{background:transparent !important;border:none !important;border-radius:0 !important;padding:0 !important;max-height:none !important;overflow:visible !important;font-size:10pt !important;line-height:1.5 !important;color:#111 !important;white-space:pre-wrap !important}
+}
 </style>
 </head>
 <body>
@@ -450,12 +461,17 @@ Uso de imagem: ${val(d.imagem)}
 
 function renderFinal(){
   nav.hidden=true;const txt=cartao();
-  app.innerHTML=`<h2>Seu raio-x está pronto</h2>
-  <p class="lead">Envie para a Silvana pelo WhatsApp e baixe uma cópia para você. Se preferir, copie o texto e cole onde quiser.</p>
+  app.innerHTML=`<div class="print-header">
+    <h1>Raio-X do Negócio · Masterclass Agenda Cheia com IA</h1>
+    <p>Silvana Rosa × Barone · Diagnóstico de Presença, Posicionamento e Ativos Digitais</p>
+  </div>
+  <h2>Seu raio-x está pronto</h2>
+  <p class="lead">Envie para a Silvana pelo WhatsApp ou salve em PDF para guardar e consultar quando quiser.</p>
   <div class="card" id="card">${esc(txt)}</div>
   <div class="actions">
    <button class="btn pri" id="wa" type="button">Enviar pelo WhatsApp</button>
-   <button class="btn sec" id="dl" type="button">Baixar meu raio-x</button>
+   <button class="btn sec" id="pdf" type="button">Salvar em PDF</button>
+   <button class="btn sec" id="dl" type="button">Baixar em Markdown (.md)</button>
    <button class="btn sec" id="cp" type="button">Copiar texto</button>
    <button class="btn sec" id="ed" type="button">Revisar respostas</button>
   </div><p class="toast" id="toast" aria-live="polite"></p>
@@ -464,6 +480,16 @@ function renderFinal(){
   document.getElementById("wa").onclick=()=>{
     let t=txt;if(t.length>6000){t=t.slice(0,6000)+"\n\n(continua no arquivo que vou enviar em seguida)";toast("O texto é longo: baixe o arquivo e envie junto no WhatsApp.");}
     window.open(`https://wa.me/${WHATS}?text=${encodeURIComponent(t)}`,"_blank");
+  };
+  document.getElementById("pdf").onclick=()=>{
+    const origTitle=document.title;
+    const cleanName=(data.nome||"negocio").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[^a-z0-9]+/g,"-");
+    document.title=`raio-x-${cleanName}-agenda-cheia`;
+    toast("Abrindo janela para salvar em PDF...");
+    setTimeout(()=>{
+      window.print();
+      setTimeout(()=>{document.title=origTitle;},1000);
+    },150);
   };
   document.getElementById("dl").onclick=async()=>{
     const name=(data.nome||"negocio").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[^a-z0-9]+/g,"-");
